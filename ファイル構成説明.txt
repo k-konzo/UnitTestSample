@@ -1,0 +1,30 @@
+.\
+|   
+\---ClassLibrary                                        ユニットテストサンプルのソリューションフォルダ。
+    |   ClassLibrary.sln                                ユニットテストサンプルのソリューションファイル。
+    |   ファイル構成説明.txt                            このファイルです。
+    |   
+    +---ClassLibrary                                    テスト対象(製品)プロジェクトフォルダ。
+    |   |   ClassLibrary.csproj                         テスト対象(製品)プロジェクトファイル。
+    |   |   PrivateProfile.cs                           テスト対象(製品)のソースコード。
+    |   |   
+    |   \---Properties                                  テスト対象(製品)プロジェクト設定フォルダ。
+    |           AssemblyInfo.cs                         テスト対象(製品)プロジェクトのアセンブリ情報。
+    |           
+    \---ClassLibraryTests                               テストプロジェクトのフォルダ(テストプロジェクト)。
+        |   .runsettings                                テスト完了後にDeploymentDirectoryのファイルを削除しないように設定したテスト構成ファイル。
+        |   ClassLibraryTests.csproj                    テストプロジェクトファイル。
+        |   packages.config
+        |   PrivateProfileTests.cs                      PrivateProfile.csのテストクラス。
+        |   
+        +---Properties                                  テストプロジェクト設定フォルダ。
+        |       AssemblyInfo.cs                         テストプロジェクトのアセンブリ情報。
+        |       
+        \---TestData                                    テストデータフォルダ。
+            \---PrivateProfileTests
+                +---ReadIntegerTest                     PrivateProfileTestsクラスのReadIntegerTest用テストデータフォルダ
+                |       ReadIntegerTest.ini
+                |       
+                \---ReadStringTest                      PrivateProfileTestsクラスのReadStringTest用テストデータフォルダ
+                        ReadStringTest.ini
+                        
